@@ -11,9 +11,15 @@
 		52A6A747294060CE00CDDCD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6A746294060CE00CDDCD7 /* ContentView.swift */; };
 		52A6A749294060CF00CDDCD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A6A748294060CF00CDDCD7 /* Assets.xcassets */; };
 		52A6A74C294060CF00CDDCD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A6A74B294060CF00CDDCD7 /* Preview Assets.xcassets */; };
+		52CD6F302946DDB000AABE4A /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD6F2F2946DDB000AABE4A /* CollectionView.swift */; };
+		52CD6F342946F11300AABE4A /* PhotoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD6F332946F11300AABE4A /* PhotoCollection.swift */; };
+		52CD6F392946FFF800AABE4A /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52CD6F372946FFF800AABE4A /* Main.xcdatamodeld */; };
+		52CD6F3B294700B400AABE4A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD6F3A294700B400AABE4A /* DataController.swift */; };
+		52CD6F3E2947058F00AABE4A /* SavedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD6F3D2947058F00AABE4A /* SavedPhoto.swift */; };
+		52CD6F4029471E5100AABE4A /* EachCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD6F3F29471E5100AABE4A /* EachCollectionView.swift */; };
 		52F9EC852942E0D700B5B0F9 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9EC842942E0D700B5B0F9 /* CacheManager.swift */; };
 		52F9EC872942E15400B5B0F9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9EC862942E15400B5B0F9 /* ViewModel.swift */; };
-		52F9EC892942E43B00B5B0F9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9EC882942E43B00B5B0F9 /* Model.swift */; };
+		52F9EC892942E43B00B5B0F9 /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9EC882942E43B00B5B0F9 /* JSONModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,9 +28,15 @@
 		52A6A746294060CE00CDDCD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52A6A748294060CF00CDDCD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52A6A74B294060CF00CDDCD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52CD6F2F2946DDB000AABE4A /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		52CD6F332946F11300AABE4A /* PhotoCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollection.swift; sourceTree = "<group>"; };
+		52CD6F382946FFF800AABE4A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		52CD6F3A294700B400AABE4A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		52CD6F3D2947058F00AABE4A /* SavedPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPhoto.swift; sourceTree = "<group>"; };
+		52CD6F3F29471E5100AABE4A /* EachCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachCollectionView.swift; sourceTree = "<group>"; };
 		52F9EC842942E0D700B5B0F9 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		52F9EC862942E15400B5B0F9 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		52F9EC882942E43B00B5B0F9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		52F9EC882942E43B00B5B0F9 /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				52A6A744294060CE00CDDCD7 /* PhotoSearchApp.swift */,
-				52F9EC882942E43B00B5B0F9 /* Model.swift */,
-				52A6A746294060CE00CDDCD7 /* ContentView.swift */,
-				52F9EC862942E15400B5B0F9 /* ViewModel.swift */,
+				52CD6F362946FFB200AABE4A /* Model */,
+				52CD6F352946FF9C00AABE4A /* View */,
+				52CD6F3C2947011100AABE4A /* DataController */,
 				52F9EC842942E0D700B5B0F9 /* CacheManager.swift */,
 				52A6A748294060CF00CDDCD7 /* Assets.xcassets */,
 				52A6A74A294060CF00CDDCD7 /* Preview Content */,
@@ -74,6 +86,36 @@
 				52A6A74B294060CF00CDDCD7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52CD6F352946FF9C00AABE4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52A6A746294060CE00CDDCD7 /* ContentView.swift */,
+				52F9EC862942E15400B5B0F9 /* ViewModel.swift */,
+				52CD6F2F2946DDB000AABE4A /* CollectionView.swift */,
+				52CD6F3F29471E5100AABE4A /* EachCollectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52CD6F362946FFB200AABE4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52F9EC882942E43B00B5B0F9 /* JSONModel.swift */,
+				52CD6F332946F11300AABE4A /* PhotoCollection.swift */,
+				52CD6F3D2947058F00AABE4A /* SavedPhoto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52CD6F3C2947011100AABE4A /* DataController */ = {
+			isa = PBXGroup;
+			children = (
+				52CD6F3A294700B400AABE4A /* DataController.swift */,
+				52CD6F372946FFF800AABE4A /* Main.xcdatamodeld */,
+			);
+			path = DataController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +188,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F9EC892942E43B00B5B0F9 /* Model.swift in Sources */,
+				52CD6F302946DDB000AABE4A /* CollectionView.swift in Sources */,
+				52F9EC892942E43B00B5B0F9 /* JSONModel.swift in Sources */,
+				52CD6F4029471E5100AABE4A /* EachCollectionView.swift in Sources */,
 				52A6A747294060CE00CDDCD7 /* ContentView.swift in Sources */,
 				52F9EC852942E0D700B5B0F9 /* CacheManager.swift in Sources */,
+				52CD6F3B294700B400AABE4A /* DataController.swift in Sources */,
+				52CD6F392946FFF800AABE4A /* Main.xcdatamodeld in Sources */,
+				52CD6F3E2947058F00AABE4A /* SavedPhoto.swift in Sources */,
 				52F9EC872942E15400B5B0F9 /* ViewModel.swift in Sources */,
+				52CD6F342946F11300AABE4A /* PhotoCollection.swift in Sources */,
 				52A6A745294060CE00CDDCD7 /* PhotoSearchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +335,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +365,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,6 +401,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52CD6F372946FFF800AABE4A /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52CD6F382946FFF800AABE4A /* Model.xcdatamodel */,
+			);
+			currentVersion = 52CD6F382946FFF800AABE4A /* Model.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 52A6A739294060CE00CDDCD7 /* Project object */;
 }
