@@ -49,7 +49,7 @@ struct ContentView: View {
                     CollectionView(dataController: dataController)
                 } label: {
                     Circle()
-                        .fill(Color.blue)
+                        .fill(Color.orange)
                         .frame(width: 44, height: 44)
                         .overlay {
                             Image(systemName: "arrow.right")
@@ -65,12 +65,12 @@ struct ContentView: View {
             HStack {
                 TextField("Search...", text: $search)
                     .font(.headline)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color.orange)
                     .bold()
                     .padding()
                     .background(Color.white.opacity(0.5))
                     .cornerRadius(10)
-                    .padding(.horizontal)
+                    .padding(.leading)
 
                 Button {
                     vm.fetch(text: search)
@@ -79,13 +79,12 @@ struct ContentView: View {
                         .font(.headline)
                         .foregroundColor(.white)
                         .padding()
-                        .background(Color.black)
+                        .background(Color.orange)
                         .cornerRadius(10)
                         .padding(.trailing)
                 }
             }
-            .offset(y: -UIScreen.main.bounds.height * 0.05)
-            .padding(.bottom)
+            .padding(.bottom, 20)
         }
     }
 
@@ -98,7 +97,7 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            vm.fetch(text: "study")
+            vm.fetch(text: "orange")
         }
         .scrollDismissesKeyboard(ScrollDismissesKeyboardMode.immediately)
     }

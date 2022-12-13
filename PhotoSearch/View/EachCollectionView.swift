@@ -24,7 +24,7 @@ struct EachCollectionView: View {
                     dismiss()
                 } label: {
                     Circle()
-                        .fill(Color.blue)
+                        .fill(Color.orange)
                         .frame(width: 44, height: 44)
                         .overlay {
                             Image(systemName: "arrow.left")
