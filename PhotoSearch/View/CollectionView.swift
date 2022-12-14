@@ -53,7 +53,7 @@ struct CollectionView: View {
                     }
             }
         }
-        .padding()
+        .padding([.horizontal , .top])
     }
 
     var gridCollections: some View {
@@ -98,6 +98,7 @@ struct CollectionView: View {
             }
         }
         .padding(.horizontal)
+        .offset(y: UIScreen.main.bounds.height * 0.1)
     }
 
     var editPopup: some View {
@@ -169,26 +170,33 @@ struct CollectionView: View {
                     .offset(x: 20)
                 }
                 .padding()
+                .offset(y: 20)
             }
-            .offset(y: -UIScreen.main.bounds.height * 0.15)
+            .offset(y: -UIScreen.main.bounds.height * 0.17)
         }
         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.7)
         .background(Color.orange)
         .cornerRadius(50)
         .offset(y: showingPopup ?
-                UIScreen.main.bounds.height * 0.45
+                UIScreen.main.bounds.height * 0.4
                 : UIScreen.main.bounds.height * 0.9)
     }
 
     var body: some View {
         ZStack {
+            ScrollView(showsIndicators: false) {
+                gridCollections
+            }
+
             VStack {
                 backAndAddButtons
 
-                ScrollView(showsIndicators: false) {
-                    gridCollections
-                }
+                Spacer()
             }
+
+            Color.secondary.opacity(0.000001)
+                .frame(maxWidth: .infinity)
+                .offset(y: showingPopup ? -100 : UIScreen.main.bounds.height)
 
             editPopup
         }

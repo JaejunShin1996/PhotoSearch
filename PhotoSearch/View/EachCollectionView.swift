@@ -18,25 +18,7 @@ struct EachCollectionView: View {
     ]
 
     var body: some View {
-        VStack {
-            HStack {
-                Button {
-                    dismiss()
-                } label: {
-                    Circle()
-                        .fill(Color.orange)
-                        .frame(width: 44, height: 44)
-                        .overlay {
-                            Image(systemName: "arrow.left")
-                                .font(.title)
-                                .foregroundColor(Color.white)
-                        }
-                }
-
-                Spacer()
-            }
-            .padding()
-
+        ZStack {
             ScrollView(showsIndicators: false) {
                 LazyVGrid(columns: columns, spacing: 3) {
                     ForEach(collection.savedPhotos, id: \.id) { photo in
@@ -47,7 +29,30 @@ struct EachCollectionView: View {
                             .clipped()
                     }
                 }
+                .offset(y: UIScreen.main.bounds.height * 0.1) 
             }
+
+            VStack {
+                HStack {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Circle()
+                            .fill(Color.orange)
+                            .frame(width: 44, height: 44)
+                            .overlay {
+                                Image(systemName: "arrow.left")
+                                    .font(.title)
+                                    .foregroundColor(Color.white)
+                            }
+                    }
+
+                    Spacer()
+                }
+
+                Spacer()
+            }
+            .padding()
         }
 
         .navigationBarBackButtonHidden()

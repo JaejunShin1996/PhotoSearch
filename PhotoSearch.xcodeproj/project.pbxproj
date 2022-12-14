@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5230BC382948278000FA040F /* TitleEditPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230BC372948278000FA040F /* TitleEditPopup.swift */; };
+		525EE8C929497383006AEDAF /* KeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525EE8C829497383006AEDAF /* KeyboardExtension.swift */; };
 		52A6A745294060CE00CDDCD7 /* PhotoSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6A744294060CE00CDDCD7 /* PhotoSearchApp.swift */; };
 		52A6A747294060CE00CDDCD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6A746294060CE00CDDCD7 /* ContentView.swift */; };
 		52A6A749294060CF00CDDCD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A6A748294060CF00CDDCD7 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		5230BC372948278000FA040F /* TitleEditPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleEditPopup.swift; sourceTree = "<group>"; };
+		525EE8C829497383006AEDAF /* KeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardExtension.swift; sourceTree = "<group>"; };
 		52A6A741294060CE00CDDCD7 /* PhotoSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A6A744294060CE00CDDCD7 /* PhotoSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchApp.swift; sourceTree = "<group>"; };
 		52A6A746294060CE00CDDCD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				52CD6F352946FF9C00AABE4A /* View */,
 				52CD6F3C2947011100AABE4A /* DataController */,
 				52F9EC842942E0D700B5B0F9 /* CacheManager.swift */,
+				525EE8C829497383006AEDAF /* KeyboardExtension.swift */,
 				52A6A748294060CF00CDDCD7 /* Assets.xcassets */,
 				52A6A74A294060CF00CDDCD7 /* Preview Content */,
 			);
@@ -199,6 +202,7 @@
 				52CD6F3B294700B400AABE4A /* DataController.swift in Sources */,
 				52CD6F392946FFF800AABE4A /* Main.xcdatamodeld in Sources */,
 				52CD6F3E2947058F00AABE4A /* SavedPhoto.swift in Sources */,
+				525EE8C929497383006AEDAF /* KeyboardExtension.swift in Sources */,
 				52F9EC872942E15400B5B0F9 /* ViewModel.swift in Sources */,
 				52CD6F342946F11300AABE4A /* PhotoCollection.swift in Sources */,
 				52A6A745294060CE00CDDCD7 /* PhotoSearchApp.swift in Sources */,
