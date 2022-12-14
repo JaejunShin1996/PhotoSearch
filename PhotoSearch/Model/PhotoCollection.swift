@@ -13,7 +13,7 @@ extension PhotoCollection {
     }
 
     var unwrappedTitle: String {
-        title ?? ""
+        title ?? "Example"
     }
 
     var unwrappedDate: Date {
@@ -23,4 +23,6 @@ extension PhotoCollection {
     var savedPhotos: [SavedPhoto] {
         photos?.allObjects as? [SavedPhoto] ?? []
     }
+
+    static let example = PhotoCollection()
 }

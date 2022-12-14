@@ -35,6 +35,30 @@ class DataController: ObservableObject {
         return managedObjectModel
     }()
 
+    static let preview: DataController = {
+        let dataController = DataController()
+
+        do {
+            try dataController.createSampleData()
+        } catch {
+            fatalError("fatal error loading preview, \(error.localizedDescription)")
+        }
+
+        return dataController
+    }()
+
+    func createSampleData() throws {
+        let viewContext = container.viewContext
+
+        for _ in 1...4 {
+            let photoCollection = PhotoCollection(context: viewContext)
+            photoCollection.id = UUID()
+            photoCollection.title = "Example"
+            photoCollection.date = Date.now
+        }
+        try viewContext.save()
+    }
+
     func save() {
         if container.viewContext.hasChanges {
             try? container.viewContext.save()
